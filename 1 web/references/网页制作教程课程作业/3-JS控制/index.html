@@ -1,0 +1,126 @@
+<!--
+    author: 2053182 王润霖
+    date: 2022.12.10
+    project: 3-JS控制
+    language: html+css+js
+-->
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html+css+js project</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+<div id="table-pos1">
+<table class=table1>
+    <tr>
+        <th>缴纳项目</th>
+        <th>个人缴费比例%</th>
+        <th>单位缴费比例%</th>
+    </tr>
+    <tr>
+        <td>养老保险</td>
+        <td>8%</td>
+        <td>20%</td>
+    </tr>
+    <tr>
+        <td>医疗保险</td>
+        <td>2%</td>
+        <td>6~10%</td>
+    </tr>
+    <tr>
+        <td>失业保险</td>
+        <td>1%</td>
+        <td>1.50%</td>
+    </tr>
+    <tr>
+        <td>工伤保险</td>
+        <td></td>
+        <td>0.5~1.2%</td>
+    </tr>
+    <tr>
+        <td>生育保险</td>
+        <td></td>
+        <td>0.80%</td>
+    </tr>
+    <tr>
+        <td>公积金</td>
+        <td>10%</td>
+        <td>10~12%</td>
+    </tr>
+</table>
+</div>
+
+<div id="table-pos2">
+<table class=table1>
+    <tr>
+        <th>级数</th>
+        <th>额度范围</th>
+        <th>税率%</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>不超过36000元的</td>
+        <td>3%</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>超过36000至144000元的部分</td>
+        <td>10%</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>超过144000至300000元的部分</td>
+        <td>20%</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>超过300000至420000元的部分</td>
+        <td>25%</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>超过420000至660000元的部分</td>
+        <td>30%</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>超过660000至960000元的部分</td>
+        <td>35%</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>超过960000元的部分</td>
+        <td>45%</td>
+    </tr>
+</table>
+</div>
+
+<!--
+   个人缴纳的五险一金，其值为应发工资*21% 
+   全月应纳税所得额，其值为应发工资-五险一金-5000(起征点)
+   个人所得税的税额，其值为按表格计算
+   账户四险，其值为应发工资*11%+单位缴付四险金额
+   账户一金，其值为应发工资*10%+单位缴付一金金额
+   个人四险，其值为应发工资*11%
+   个人一金，其值为应发工资*10%
+   -->
+
+<h3 id="money">收入部分</h3>
+<h5 id="inputtext-1">个人税前收入：<br><br>单位缴付四险：<br><br>单位缴付一金：</h5>
+<input type="text" id="texts">
+<input type="text" id="texts2">
+<input type="text" id="texts3">
+<input type="button" id="testbotton" value="计算" onclick="calculate()">
+<div id="result">税后收入：
+    <span id="att1"></span><br><br>账户四险（个人+单位）：
+    <span id="att2"></span><br><br>账户一金（个人+单位）：
+    <span id="att3"></span>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!--
+    author: 2053182 王润霖
+    date: 2022.12.01
+    project: 1-静态页面控制
+    language: html(only)  
+-->
+
+<!--因为要求只能使用html，不能使用css，
+    所以整体思路为：利用表格进行页面的排版，将整个页面分为了四个表格
+    并对表格的边框进行了隐藏，从而只用html完成静态页面控制-->
+
+<!doctype html>
+<html>
+<head>
+<title>html(only) project</title>
+</head>
+<body>
+<!-- 整本书宽度700px，高度800px -->
+
+<!-- 1.书最上面的信息，高度150px-->
+<table border=0 id="table-1" width=700 height=150 bgcolor=#EA7F7F>
+    <tr>
+        <td width=40></td>
+        <td width=80><img src="pic/pic1.png" width=60 height=60/></td>
+        <td>     
+            <table border=0 id="child-table-1" height=60>
+                <td><font size="2" color="#FFFFFF" face="黑体">高等院校</font></td>
+                <tr>
+                <td><font size="3" color="#FFFF00" face="华文行楷">程 / 序 / 员 / 网 / 页 / 设 / 计 / 教 / 材</font></td>
+                </tr>
+                <td><font size="2" color="#FFFFFF" face="黑体">立体化教程 专业程序员的养成</font></td>
+            </table><!-- End #child-table-1 -->
+        </td>
+    </tr>
+    <tr height=50>
+        <td width=40></td>
+        <td></td>
+        <td align="right"><img src="pic/pic5.png" width=60 height=50/></td>
+    </tr>
+</table><!-- End #table-1 -->
+
+<table border=0 width=700 height=2 bgcolor="#FFFFFF">
+</table>
+
+<!-- 2.书中间的信息-->
+<table border=0 id="table-2" width=700 height=200 bgcolor=#EA7F7F>
+    <tr>
+        <td width=40></td>
+        <td height=40><font size="8" color="#FFFFFF" face="宋体">网页设计 及 前端开发</font></td>
+        <td width=150></td>
+    </tr>
+    <tr>
+        <td width=40></td>
+        <td height=40><font size="7" color="#FFFF00" face="Georgia">(Html5+</font></td>
+        <td width=150></td>
+    </tr>
+    <tr>
+        <td width=40></td>
+        <td height=40 align="right"><font size="7" color="#FFFF00" face="Georgia">CSS+Javascript)</font></td>
+        <td width=150></td>
+    </tr>
+    <tr>
+        <td width=40></td>
+        <td height=40><font size="8" color="#FFFFFF" face="宋体">边 做 边 学</font></td>
+        <td width=150></td>
+    </tr>
+    <tr>
+        <td width=40></td>
+        <td height=40><font size="2" color="#FFFFFF" face="微软雅黑">张吉惟 林国瑞 / 主编<br>林玟书 林雅南 江奕云 / 副主编</font></td>
+        <td width=150 align="right"><img src="pic/pic6.png" width=60 height=50/></td>
+    </tr>
+</table><!-- End #table-2 -->
+
+<table border=0 width=700 height=2 bgcolor="#FFFFFF">
+</table>
+
+<!-- 3.书下面的信息-->
+<table border=0 id="table-3" width=700 height=200 bgcolor=#EA7F7F>
+    <tr>
+        <td width=40></td>
+        <td width=100><img src="pic/pic2.png" width=60 height=60/></td>
+        <td height=40>
+            <font size="3" color=greenyellow face="楷体">学习资源支持</font><br>
+            <font size="2" color=greenyellow face="微软雅黑">13</font>
+            <font size="2" color=white face="微软雅黑">章精美设计</font>
+            <font size="2" color=greenyellow face="微软雅黑">PPT课件，</font>
+            <font size="2" color=white face="微软雅黑">帮助学生自主预习和复习</font><br>
+            <font size="2" color=greenyellow face="微软雅黑">20</font>
+            <font size="2" color=white face="微软雅黑">章完整</font>
+            <font size="2" color=greenyellow face="微软雅黑">章节提纲，</font>
+            <font size="2" color=white face="微软雅黑">方便快速整理网页设计学习思路</font><br>
+            <font size="2" color=greenyellow face="微软雅黑">120</font>
+            <font size="2" color=white face="微软雅黑">种网站设计</font>
+            <font size="2" color=greenyellow face="微软雅黑">经典案例展示，</font>
+            <font size="2" color=white face="微软雅黑">助力学习优秀网站设计思路</font>
+        </td>
+    </tr>
+    <tr>
+        <td width=40></td>
+        <td><img src="pic/pic3.png" width=60 height=60/></td>
+        <td height=40>
+            <font size="3" color=yellow face="楷体">专业指导网站：https://1.tongji.edu.cn/web-design</font><br>
+            <font size="2" color=greenyellow face="微软雅黑">852</font>
+            <font size="2" color=white face="微软雅黑">个实例的</font>
+            <font size="2" color=greenyellow face="微软雅黑">素材与效果文件，</font>
+            <font size="2" color=white face="微软雅黑">涵盖网站设计的各个方面</font><br>
+            <font size="2" color=greenyellow face="微软雅黑">29</font>
+            <font size="2" color=white face="微软雅黑">个实训及</font>
+            <font size="2" color=greenyellow face="微软雅黑">操作视频演示，</font>
+            <font size="2" color=white face="微软雅黑">学习方式更直观</font><br>
+            <font size="2" color=greenyellow face="微软雅黑">1220</font>
+            <font size="2" color=white face="微软雅黑">道精选</font>
+            <font size="2" color=greenyellow face="微软雅黑">网站设计例题，</font>
+            <font size="2" color=white face="微软雅黑">帮助学生轻松迎考</font>
+        </td>
+    </tr>
+</table><!-- End #table-3 -->
+
+<table border=0 width=700 height=2 bgcolor="#FFFFFF">
+</table>
+
+<!-- 4.最下面的出版社信息-->
+<table border=0 id="table-4" width=700 height=80 bgcolor=#EA7F7F>
+    <tr>
+        <td width=220></td>
+        <td width=60><img src="pic/pic4.png" width=60 height=50/></td>
+        <td width=150 align="center">
+            <font size="2" color=white face="微软雅黑">同济大学出版社</font><br>
+            <font size="2" color=white face="微软雅黑">Tongji University Press</font>
+        </td>
+        <td width=270 align="right"><img src="pic/pic7.png" width=160 height=80/></td>
+    </tr>
+</table><!-- End #table-4 -->
+
+</body>
+</html>
